@@ -8,7 +8,7 @@ class App extends React.Component {
     super();
 
     this.state = {
-      posts: POSTS_LIST,
+      posts: [],
       openPostForm: false,
       postForm: {
         title: "",
@@ -17,28 +17,51 @@ class App extends React.Component {
     };
   }
 
+  componentDidMount() {
+    fetch("https://jsonplaceholder.typicode.com/posts")
+      .then(res => res.json())
+      .then(posts => this.setState({ posts }));
+  }
+
   onTextChange = (type, value) =>
     this.setState({ postForm: { ...this.state.postForm, [type]: value } });
 
   onSubmit = () => {
-    this.setState(prevState => ({
-      posts: prevState.posts.concat({
-        ...prevState.postForm,
-        userId: 1,
-        id: prevState.posts.length + 1
+    fetch("https://jsonplaceholder.typicode.com/posts", {
+      method: "POST",
+      body: JSON.stringify({
+        ...this.state.postForm,
+        userId: 1
       }),
-      postForm: {
-        title: "",
-        body: ""
-      },
-      openPostForm: false
-    }));
+      headers: {
+        "Content-type": "application/json; charset=UTF-8"
+      }
+    })
+      .then(response => response.json())
+      .then(json =>
+        this.setState(prevState => ({
+          posts: prevState.posts.concat({
+            ...prevState.postForm,
+            userId: 1,
+            id: json.id
+          }),
+          postForm: {
+            title: "",
+            body: ""
+          },
+          openPostForm: false
+        }))
+      );
   };
 
   onDelete = postId => {
-    this.setState(prevState => ({
-      posts: prevState.posts.filter(post => post.id !== postId)
-    }));
+    fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`, {
+      method: "DELETE"
+    }).then(() =>
+      this.setState(prevState => ({
+        posts: prevState.posts.filter(post => post.id !== postId)
+      }))
+    );
   };
 
   render() {
