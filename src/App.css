@@ -2,37 +2,71 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div.posts-main {
+  margin: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+div.posts-main > ul li {
+  list-style: none;
+  border: 1px solid;
+  padding: 10px;
+  margin: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+div.posts-main > h1 {
+  margin: 30px;
+  text-align: center;
+  font-size: 44px;
+}
+
+button.create-post {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  font-size: 28px;
+  position: fixed;
+  top: 85%;
+  left: 85%;
+  background-color: gray;
+  color: #fff;
+}
+
+.post-form {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  top: 50%;
+  left: 50%;
+  border: 1px solid;
+  background-color: aliceblue;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 300px;
+  min-width: 300px;
 }
 
-.App-link {
-  color: #61dafb;
+.post-form h1 {
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.post-form input,
+.post-form textarea,
+.post-form-button-group {
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+}
+
+.post-form textarea {
+  height: 200px;
+}
+.post-form-button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-form button,
+div.posts-main > ul li button {
+  height: 40px;
+  width: 120px;
 }
