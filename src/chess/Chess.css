@@ -1,0 +1,12 @@
+.chess-main {
+  margin: 10%;
+  display: flex;
+  width: 800px;
+  flex-wrap: wrap;
+}
+
+.chess-tile {
+  height: 98px;
+  width: 98px;
+  border: 1px solid;
+}

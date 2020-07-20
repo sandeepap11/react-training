@@ -1,14 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import Board from "./chess/Board";
+import * as serviceWorker from "./serviceWorker";
+import HOCDemoMain from "./hoc/HOCDemoMain";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <HOCDemoMain />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
