@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Post extends Component {
-  render() {
-    const { title, body, onDelete } = this.props;
+function Post(props) {
+  {
+    const { title, body, onDelete } = props;
     return (
       <li>
         <h1>{title}</h1>
