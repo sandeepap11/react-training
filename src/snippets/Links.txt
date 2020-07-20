@@ -1,4 +1,5 @@
 Error Boundary Demo: https://codepen.io/gaearon/pen/wqvxGa?editors=0010
 https://jsonplaceholder.typicode.com/posts
+https://jsonplaceholder.typicode.com/guide.html
 POST	/posts
 DELETE	/posts/1
