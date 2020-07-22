@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import { SONG_DATA } from "./utils/Data";
 import SongInfo from "./components/SongInfo";
 import AlbumInfo from "./components/AlbumInfo";
 
