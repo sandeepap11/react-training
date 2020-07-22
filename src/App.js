@@ -1,29 +1,23 @@
 import React from "react";
 import "./App.css";
+import AppTile from "./AppTile";
+
+// Class Components examples here
+// App-Functional.js has functional components
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      inputValue: "",
-      textValue: ""
-    };
-  }
   render() {
     return (
       <div className="App">
-        <input
-          type="text"
-          style={{ height: "40px", width: "200px", margin: "5% 20%" }}
-          onChange={event => this.setState({ textValue: event.target.value })}
-        />
-        <button
-          onClick={() => this.setState({ inputValue: this.state.textValue })}
-        >
-          Show Value
-        </button>
-        <div>Value is {this.state.inputValue}</div>
+        {[1, 2, 3, 4, 6, 7, 8, 9, 11, 12, 13, 14, 16, 17, 18, 19].map(
+          number => (
+            <AppTile
+              key={number}
+              isBlackTile={number % 2 === 0}
+              number={number}
+            />
+          )
+        )}
       </div>
     );
   }
