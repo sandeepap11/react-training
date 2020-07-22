@@ -1,8 +1,13 @@
+.App-main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
 .App {
   display: flex;
   width: 408px;
   height: 408px;
-  margin: 20%;
+
   flex-wrap: wrap;
 }
 
