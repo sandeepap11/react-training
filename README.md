@@ -1,3 +1,7 @@
+Starter for posts list, create and delete. Reference for live code presentation.
+
+> > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
