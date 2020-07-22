@@ -1,4 +1,4 @@
-SetState example init.
+SetState example final.
 
 > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
