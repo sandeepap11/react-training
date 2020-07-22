@@ -1,4 +1,4 @@
-Composition Example Starter. Look for final, to see final example.
+Composition Example Final.
 
 > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
