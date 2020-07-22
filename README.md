@@ -1,4 +1,4 @@
-Composition Example Final.
+Passing Props Final.
 
 > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

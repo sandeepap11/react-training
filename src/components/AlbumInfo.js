@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import { SONG_DATA } from "../utils/Data";
 
 class AlbumInfo extends Component {
   render() {
-    const { artist, album, year, albumCover } = SONG_DATA;
+    const { artist, album, year, albumCover } = this.props;
     return (
       <div className="App-album">
         <img src={albumCover} />
