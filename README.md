@@ -21,6 +21,9 @@ final-posts-list-api : API Call integration for posts-list example
 styling-react-components: Different ways of styling
 error-boundary: Error Boundary Example
 
+react-router-example: React Router Example
+axios-example: Axios example for API calls
+
 > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
