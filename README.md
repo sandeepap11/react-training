@@ -18,6 +18,8 @@ jsx-init-posts-list : Starter for posts list, create post and delete post Final 
 jsx-final-posts-list : Example for posts list, create post and delete post Final
 final-posts-list-api : API Call integration for posts-list example
 
+styling-react-components: Different ways of styling
+
 > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
