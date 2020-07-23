@@ -1,6 +1,12 @@
-Composition Example Final.
+Styling Components.
+CSS - App.js, styling - CSSStyles.css
+SASS - TabsList.js and Tab.js, styling - SCSSStyles.scss
+Inline Styles - Tab.js
+Styled Components - TabsList.js
 
-> > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

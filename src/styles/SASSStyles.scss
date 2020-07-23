@@ -1,0 +1,25 @@
+.tabs-main {
+  background-color: black;
+  margin: 20px;
+  border-radius: 10px;
+
+  ul {
+    color: antiquewhite;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+    li {
+      background-color: black;
+      list-style: none;
+      height: 40px;
+      margin: 10px;
+      width: 150px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+    }
+  }
+}
