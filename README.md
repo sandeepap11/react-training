@@ -24,6 +24,9 @@ error-boundary: Error Boundary Example
 react-router-example: React Router Example
 axios-example: Axios example for API calls
 
+hoc-example-init: HOC Loading example starter
+hoc-example: HOC Loading working example
+
 > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
