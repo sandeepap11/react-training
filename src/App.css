@@ -70,3 +70,14 @@ div.posts-main > ul li button {
   height: 40px;
   width: 120px;
 }
+
+.data-loading {
+  display: grid;
+  color: #777;
+  font-size: 64px;
+  place-items: center;
+  height: 100px;
+  padding: 20px;
+  margin: 40px;
+  font-weight: bold;
+}
