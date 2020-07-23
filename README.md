@@ -1,8 +1,4 @@
-Styling Components.
-CSS - App.js, styling - CSSStyles.css
-SASS - TabsList.js and Tab.js, styling - SCSSStyles.scss
-Inline Styles - Tab.js
-Styled Components - TabsList.js
+React Router Example
 
 > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
 

@@ -1,36 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 import Tab from "./Tab";
 import "../styles/SASSStyles.scss";
 import styled from "styled-components";
-
-class TabsList extends Component {
-  state = {
-    selectedTab: 1
-  };
-
-  onSelectTab = selectedTab => this.setState({ selectedTab });
-
-  render() {
-    const viewIndex = TABS.findIndex(tab => tab.id === this.state.selectedTab);
-    return (
-      <div className="tabs-main">
-        <ul>
-          {TABS.map(tab => (
-            <Tab
-              tab={tab}
-              key={tab.id}
-              onSelectTab={() => this.onSelectTab(tab.id)}
-              isSelected={this.state.selectedTab === tab.id}
-            />
-          ))}
-        </ul>
-        <div>{TABS[viewIndex].view}</div>
-      </div>
-    );
-  }
-}
-
-export default TabsList;
 
 const StyledDiv = styled.div`
   padding: 20px;
@@ -43,20 +16,53 @@ const StyledDiv = styled.div`
   border-radius: 0 0 10px 10px;
 `;
 
+const TabsList = () => {
+  return (
+    <div className="tabs-main">
+      <Router>
+        <div>
+          <ul>
+            {TABS.map(tab => (
+              <Tab tab={tab} key={tab.id} />
+            ))}
+          </ul>
+
+          <Switch>
+            {TABS.map(tab => (
+              <Route key={tab.id} exact path={tab.path}>
+                {tab.view}
+              </Route>
+            ))}
+            <Route>
+              <StyledDiv>Woah! That page does not exist.</StyledDiv>}
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+      );
+    </div>
+  );
+};
+
+export default TabsList;
+
 const TABS = [
   {
     id: 1,
     name: "About Me",
-    view: <StyledDiv>Hello, it's me</StyledDiv>
+    view: <StyledDiv>Hello, it's me</StyledDiv>,
+    path: "/"
   },
   {
     id: 2,
     name: "Work",
-    view: <StyledDiv>This is what I do</StyledDiv>
+    view: <StyledDiv>This is what I do</StyledDiv>,
+    path: "/work"
   },
   {
     id: 3,
     name: "Contact",
-    view: <StyledDiv>Reach me out here</StyledDiv>
+    view: <StyledDiv>Reach me out here</StyledDiv>,
+    path: "/contact"
   }
 ];

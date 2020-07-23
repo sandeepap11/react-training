@@ -1,20 +1,19 @@
-import React, { Component } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
+import { withRouter } from "react-router";
 
-class Tab extends Component {
-  render() {
-    const { tab, isSelected } = this.props;
-    return (
-      <li
-        style={{
-          backgroundColor: !isSelected ? "black" : "white",
-          color: isSelected ? "black" : "white"
-        }}
-        onClick={this.props.onSelectTab}
-      >
-        {tab.name}
-      </li>
-    );
-  }
+function Tab({ location, tab }) {
+  const isSelected = location.pathname === tab.path;
+  return (
+    <li
+      style={{
+        backgroundColor: !isSelected ? "black" : "white",
+        color: isSelected ? "black" : "white"
+      }}
+    >
+      <Link to={tab.path}>{tab.name}</Link>
+    </li>
+  );
 }
 
-export default Tab;
+export default withRouter(Tab);
