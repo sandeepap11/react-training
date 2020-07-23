@@ -1,13 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Board from "./chess/Board";
+import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import HOCDemoMain from "./hoc/HOCDemoMain";
 
 ReactDOM.render(
   <React.StrictMode>
-    <HOCDemoMain />
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
