@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import { POSTS_LIST } from "./utils/Posts";
 import Post from "./Post";
+import axios from "axios";
 
 class App extends React.Component {
   constructor() {
@@ -18,32 +18,32 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch("https://jsonplaceholder.typicode.com/posts")
-      .then(res => res.json())
-      .then(posts => this.setState({ posts }));
+    axios
+      .get("https://jsonplaceholder.typicode.com/posts")
+      .then(response => this.setState({ posts: response.data }));
   }
 
   onTextChange = (type, value) =>
     this.setState({ postForm: { ...this.state.postForm, [type]: value } });
 
   onSubmit = () => {
-    fetch("https://jsonplaceholder.typicode.com/posts", {
-      method: "POST",
-      body: JSON.stringify({
-        ...this.state.postForm,
-        userId: 1
-      }),
-      headers: {
-        "Content-type": "application/json; charset=UTF-8"
-      }
-    })
-      .then(response => response.json())
-      .then(json =>
+    axios
+      .post("https://jsonplaceholder.typicode.com/posts", {
+        method: "POST",
+        body: {
+          ...this.state.postForm,
+          userId: 1
+        },
+        headers: {
+          "Content-type": "application/json; charset=UTF-8"
+        }
+      })
+      .then(response =>
         this.setState(prevState => ({
           posts: prevState.posts.concat({
             ...prevState.postForm,
             userId: 1,
-            id: json.id
+            id: response.data.id
           }),
           postForm: {
             title: "",
@@ -55,13 +55,15 @@ class App extends React.Component {
   };
 
   onDelete = postId => {
-    fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`, {
-      method: "DELETE"
-    }).then(() =>
-      this.setState(prevState => ({
-        posts: prevState.posts.filter(post => post.id !== postId)
-      }))
-    );
+    axios
+      .delete(`https://jsonplaceholder.typicode.com/posts/${postId}`, {
+        method: "DELETE"
+      })
+      .then(() =>
+        this.setState(prevState => ({
+          posts: prevState.posts.filter(post => post.id !== postId)
+        }))
+      );
   };
 
   render() {
