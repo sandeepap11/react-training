@@ -19,6 +19,7 @@ jsx-final-posts-list : Example for posts list, create post and delete post Final
 final-posts-list-api : API Call integration for posts-list example
 
 styling-react-components: Different ways of styling
+error-boundary: Error Boundary Example
 
 > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
 
