@@ -1,4 +1,4 @@
-HOC example Final
+HOC example Starter file
 
 > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
 
