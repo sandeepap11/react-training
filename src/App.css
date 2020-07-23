@@ -21,3 +21,10 @@
 .App-album div h2 {
   margin: 0;
 }
+
+h1 + button {
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+  background-color: azure;
+}
