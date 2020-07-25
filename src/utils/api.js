@@ -2,9 +2,9 @@ import axios from "axios";
 
 const API_ENDPOINT = "https://jsonplaceholder.typicode.com";
 
-export const getPosts = () => axios.get(`${API_ENDPOINT}/posts`);
+export const getPostsAsync = () => axios.get(`${API_ENDPOINT}/posts`);
 
-export const createPost = body =>
+export const createPostAsync = body =>
   axios.post(`${API_ENDPOINT}/posts`, {
     body,
     headers: {
@@ -12,5 +12,5 @@ export const createPost = body =>
     }
   });
 
-export const deletePost = postId =>
+export const deletePostAsync = postId =>
   axios.delete(`${API_ENDPOINT}/posts/${postId}`);

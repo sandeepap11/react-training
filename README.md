@@ -1,4 +1,4 @@
-API Connection for posts list example to use dynamic data
+Redux Example with Thunk Middleware for API calls
 
 > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
 
