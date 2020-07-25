@@ -68,6 +68,7 @@ button.create-post {
   min-height: 300px;
   min-width: 300px;
   border-radius: 20px;
+  align-items: center;
 }
 
 .post-form h1 {
@@ -80,37 +81,27 @@ button.create-post {
 
 .post-form input,
 .post-form textarea,
-.post-form-button-group {
+.form-submit-button {
   padding: 10px 20px;
   margin: 10px;
   width: 300px;
   border-radius: 20px;
+  font-size: 20px;
 }
 
 .post-form textarea {
   height: 200px;
 }
 
-.post-form-button-group {
-  display: flex;
-  justify-content: space-between;
-}
-
-.post-form button {
+.form-submit-button {
   height: 40px;
-  width: 120px;
-  border-radius: 20px;
+  width: 300px;
   color: white;
-  background-color: maroon;
-  border: none;
-  font-size: 20px;
-}
-
-.post-form button:first-of-type {
   background-color: rebeccapurple;
+  border: none;
 }
 
-div.posts-main > ul li button {
+.form-close-button {
   border-radius: 50%;
   height: 30px;
   width: 30px;
@@ -123,6 +114,6 @@ div.posts-main > ul li button {
   font-size: 20px;
 }
 
-div.posts-main > ul li button:after {
+.form-close-button:after {
   content: "X";
 }

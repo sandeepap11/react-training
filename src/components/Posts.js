@@ -78,6 +78,10 @@ class Posts extends React.Component {
         </ul>
         {openPostForm && (
           <div className="post-form">
+            <button
+              className="form-close-button"
+              onClick={() => this.setState({ openPostForm: false })}
+            ></button>
             <h1>New Post</h1>
             <input
               type="text"
@@ -90,12 +94,10 @@ class Posts extends React.Component {
               onChange={event => this.onTextChange("body", event.target.value)}
               value={postForm.body}
             ></textarea>
-            <div className="post-form-button-group">
-              <button onClick={this.onSubmit}>Post</button>
-              <button onClick={() => this.setState({ openPostForm: false })}>
-                Cancel
-              </button>
-            </div>
+
+            <button className="form-submit-button" onClick={this.onSubmit}>
+              Post
+            </button>
           </div>
         )}
       </div>

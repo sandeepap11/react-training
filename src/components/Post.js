@@ -6,7 +6,7 @@ function Post(props) {
     <li>
       <h1>{title}</h1>
       <p>{body}</p>
-      <button onClick={onDelete}></button>
+      <button className="form-close-button" onClick={onDelete}></button>
     </li>
   );
 }
