@@ -1,34 +1,58 @@
-.App {
-  text-align: center;
-}
-
 div.posts-main {
   margin: 10px;
 }
 
+div.posts-main > ul {
+  padding-top: 300px;
+  background-color: white;
+}
+
 div.posts-main > ul li {
+  position: relative;
+  background-color: black;
+  color: white;
   list-style: none;
   border: 1px solid;
   padding: 10px;
   margin: 10px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+div.posts-main > ul li h1 {
+  color: rgb(0, 140, 255);
+  font-weight: 400;
+  font-size: 48px;
+}
+
+div.posts-main > ul li p {
+  font-weight: 200;
+  font-size: 24px;
 }
 
 div.posts-main > h1 {
+  position: fixed;
+  display: grid;
+  place-items: center;
   margin: 30px;
-  text-align: center;
-  font-size: 44px;
+  font-size: 200px;
+  font-weight: 100;
+  color: rebeccapurple;
+  width: 100vw;
 }
 
 button.create-post {
   border-radius: 50%;
   height: 80px;
   width: 80px;
-  font-size: 28px;
+  font-size: 60px;
   position: fixed;
   top: 85%;
   left: 85%;
-  background-color: gray;
-  color: #fff;
+  background-color: rebeccapurple;
+  color: white;
+  z-index: 1;
+  border: none;
 }
 
 .post-form {
@@ -38,35 +62,68 @@ button.create-post {
   top: 50%;
   left: 50%;
   border: 1px solid;
-  background-color: aliceblue;
+  background-color: black;
+  border: 1px solid white;
   display: flex;
   flex-direction: column;
   min-height: 300px;
   min-width: 300px;
+  border-radius: 20px;
 }
 
 .post-form h1 {
   text-align: center;
+  font-size: 80px;
+  font-weight: 100;
+  color: rebeccapurple;
+  margin: 20px;
 }
 
 .post-form input,
 .post-form textarea,
 .post-form-button-group {
-  padding: 10px;
+  padding: 10px 20px;
   margin: 10px;
   width: 300px;
+  border-radius: 20px;
 }
 
 .post-form textarea {
   height: 200px;
 }
+
 .post-form-button-group {
   display: flex;
   justify-content: space-between;
 }
 
-.post-form button,
-div.posts-main > ul li button {
+.post-form button {
   height: 40px;
   width: 120px;
+  border-radius: 20px;
+  color: white;
+  background-color: maroon;
+  border: none;
+  font-size: 20px;
+}
+
+.post-form button:first-of-type {
+  background-color: rebeccapurple;
+}
+
+div.posts-main > ul li button {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  border: none;
+  color: white;
+  background-color: maroon;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+}
+
+div.posts-main > ul li button:after {
+  content: "X";
 }

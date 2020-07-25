@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import { POSTS_LIST } from "./utils/Posts";
 import Post from "./Post";
+import { getPosts, deletePost, createPost } from "./utils/api";
 
 class App extends React.Component {
   constructor() {
@@ -18,24 +18,16 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch("https://jsonplaceholder.typicode.com/posts")
-      .then(res => res.json())
-      .then(posts => this.setState({ posts }));
+    getPosts().then(res => this.setState({ posts: res.data }));
   }
 
   onTextChange = (type, value) =>
     this.setState({ postForm: { ...this.state.postForm, [type]: value } });
 
   onSubmit = () => {
-    fetch("https://jsonplaceholder.typicode.com/posts", {
-      method: "POST",
-      body: JSON.stringify({
-        ...this.state.postForm,
-        userId: 1
-      }),
-      headers: {
-        "Content-type": "application/json; charset=UTF-8"
-      }
+    createPost({
+      ...this.state.postForm,
+      userId: 1
     })
       .then(response => response.json())
       .then(json =>
@@ -55,9 +47,7 @@ class App extends React.Component {
   };
 
   onDelete = postId => {
-    fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`, {
-      method: "DELETE"
-    }).then(() =>
+    deletePost(postId).then(() =>
       this.setState(prevState => ({
         posts: prevState.posts.filter(post => post.id !== postId)
       }))
