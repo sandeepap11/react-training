@@ -27,6 +27,8 @@ axios-example: Axios example for API calls
 hoc-example-init: HOC Loading example starter
 hoc-example: HOC Loading working example
 
+redux-example-init: Redux Example with Thunk Middleware for Network requests
+
 > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
