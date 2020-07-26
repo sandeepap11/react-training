@@ -10,7 +10,7 @@ import {
   DELETE_POST_FAILURE
 } from "./Constants";
 
-const reducer = (
+const postsReducer = (
   state = {
     posts: [],
     isPostsFetched: false,
@@ -106,4 +106,4 @@ const reducer = (
   }
 };
 
-export default reducer;
+export default postsReducer;

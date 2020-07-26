@@ -49,15 +49,15 @@ class Posts extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  posts: state.posts,
-  isPostsFetched: state.isPostsFetched,
-  isPostsFetchSuccess: state.isPostsFetchSuccess,
-  isPostAddRequested: state.isPostAddRequested,
-  isPostAdded: state.isPostAdded,
-  isPostAddSuccess: state.isPostAddSuccess,
-  isPostDeleteRequested: state.isPostDeleteRequested,
-  isPostDeleted: state.isPostDeleted,
-  isPostDeleteSuccess: state.isPostDeleteSuccess
+  posts: state.postsState.posts,
+  isPostsFetched: state.postsState.isPostsFetched,
+  isPostsFetchSuccess: state.postsState.isPostsFetchSuccess,
+  isPostAddRequested: state.postsState.isPostAddRequested,
+  isPostAdded: state.postsState.isPostAdded,
+  isPostAddSuccess: state.postsState.isPostAddSuccess,
+  isPostDeleteRequested: state.postsState.isPostDeleteRequested,
+  isPostDeleted: state.postsState.isPostDeleted,
+  isPostDeleteSuccess: state.postsState.isPostDeleteSuccess
 });
 
 const mapDispatchToProps = dispatch => ({
