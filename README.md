@@ -28,6 +28,7 @@ hoc-example-init: HOC Loading example starter
 hoc-example: HOC Loading working example
 
 redux-example-init: Redux Example with Thunk Middleware for Network requests
+vscode-debugger: Launch JSON configuration for create-react-app projects, for VS Code debugger for chrome
 
 > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
 
