@@ -1,4 +1,4 @@
-API Connection for posts list example to use dynamic data
+Add Launch json for VS Code Chrome debugger
 
 > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
 
