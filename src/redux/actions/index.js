@@ -8,8 +8,8 @@ import {
   DELETE_POST,
   DELETE_POST_SUCCESS,
   DELETE_POST_FAILURE
-} from "./Constants";
-import { getPostsAsync, createPostAsync } from "../utils/api";
+} from "../Constants";
+import { getPostsAsync, createPostAsync } from "../../utils/api";
 
 // GET METHODS
 const getPosts = () => ({

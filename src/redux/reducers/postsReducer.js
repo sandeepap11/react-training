@@ -8,7 +8,7 @@ import {
   DELETE_POST,
   DELETE_POST_SUCCESS,
   DELETE_POST_FAILURE
-} from "./Constants";
+} from "../Constants";
 
 const postsReducer = (
   state = {
