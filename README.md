@@ -30,6 +30,9 @@ hoc-example: HOC Loading working example
 redux-example-init: Redux Example with Thunk Middleware for Network requests
 vscode-debugger: Launch JSON configuration for create-react-app projects, for VS Code debugger for chrome
 
+react-hooks-init: Starter example for react-hooks useState
+react-hooks-final: Working example for react-hooks useState
+
 > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
