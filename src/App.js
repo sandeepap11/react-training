@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import Counter from "./Counter";
+import MatchesList from "./components/MatchesList";
 
 function App() {
   return (
     <div className="App">
-      <Counter />
+      <MatchesList />
     </div>
   );
 }
