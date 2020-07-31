@@ -1,22 +1,15 @@
-import * as React from "react";
+import React, { useState } from "react";
 
-export default class Counter extends React.Component {
-  state = {
-    count: 0
-  };
+export default function Counter() {
+  const [count, setCount] = useState(0);
 
-  changeCounter = type =>
-    this.setState(prevState => ({
-      count: type === "-" ? prevState.count - 1 : prevState.count + 1
-    }));
+  const changeCounter = type => setCount(type === "-" ? count - 1 : count + 1);
 
-  render() {
-    return (
-      <div className="main-counter-class">
-        <button onClick={() => this.changeCounter("-")}>-</button>
-        <div>{this.state.count}</div>
-        <button onClick={() => this.changeCounter("+")}>+</button>
-      </div>
-    );
-  }
+  return (
+    <div className="main-counter-class">
+      <button onClick={() => changeCounter("-")}>-</button>
+      <div>{count}</div>
+      <button onClick={() => changeCounter("+")}>+</button>
+    </div>
+  );
 }

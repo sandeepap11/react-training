@@ -1,4 +1,4 @@
-Starter for react-hooks useState example
+Working example for react-hooks useState
 
 > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
 
