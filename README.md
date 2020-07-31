@@ -1,34 +1,4 @@
-Master Branch: No useful code here. Below is the branches list for specific examples.
-
-create-react-app-original : Result of create-react-app commandline tool
-create-element-final : Create Element method usage
-
-composition : Composition Example starter
-composition-final : Composition Example Final
-
-passing-props-final : Passing props example
-setstate-init : Set State example starter
-setstate-final : Set State Example final
-
-classvfunctionalComponents: Class vs Functional Components Snippets
-controlled-components : Controlled Components Example
-ref-example-final : Uncontrolled components / using Refs example
-
-jsx-init-posts-list : Starter for posts list, create post and delete post Final example
-jsx-final-posts-list : Example for posts list, create post and delete post Final
-final-posts-list-api : API Call integration for posts-list example
-
-styling-react-components: Different ways of styling
-error-boundary: Error Boundary Example
-
-react-router-example: React Router Example
-axios-example: Axios example for API calls
-
-hoc-example-init: HOC Loading example starter
-hoc-example: HOC Loading working example
-
-redux-example-init: Redux Example with Thunk Middleware for Network requests
-vscode-debugger: Launch JSON configuration for create-react-app projects, for VS Code debugger for chrome
+Starter for react-hooks useState example
 
 > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
 
