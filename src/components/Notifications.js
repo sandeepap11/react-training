@@ -30,7 +30,9 @@ function Notifications() {
             <div
               className="notification-card"
               key={notification.id}
-              onClick={() => setCompleted(notification.id)}
+              onClick={() => {
+                if (!notification.completed) setCompleted(notification.id);
+              }}
             >
               <div className="notification-title">{notification.title}</div>
               {!notification.completed && (
