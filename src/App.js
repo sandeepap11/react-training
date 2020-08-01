@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import Notifications from "./Notifications";
+import Notifications from "./components/Notifications";
 
 function App() {
   const [selectedTab, setSelectedTab] = useState("Home");

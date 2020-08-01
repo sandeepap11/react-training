@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import useNotifications from "./useNotifications";
+import useNotifications from "../hooks/useNotifications";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
 
