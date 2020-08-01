@@ -32,8 +32,10 @@ vscode-debugger: Launch JSON configuration for create-react-app projects, for VS
 
 react-hooks-init: Starter example for react-hooks useState
 react-hooks-final: Working example for react-hooks useState
+
 react-hooks-useeffect: Working example for react-hooks useEffect
 react-hooks-useReducer: Working example for useReducer + useContext
+custom-hooks-example: Custom Hooks Example
 
 > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
 
