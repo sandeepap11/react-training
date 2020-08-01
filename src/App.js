@@ -1,18 +1,26 @@
-import React, { useReducer } from "react";
-import { USERS } from "./utils/UsersList";
-import { userReducer } from "./utils/UserReducer";
+import React, { useState } from "react";
 import "./App.css";
-import { RoboUsers } from "./components/RoboUsers";
-
-export const RoboContext = React.createContext();
+import Notifications from "./Notifications";
 
 function App() {
-  const [roboUsers, dispatch] = useReducer(userReducer, USERS);
+  const [selectedTab, setSelectedTab] = useState("Home");
 
   return (
-    <RoboContext.Provider value={{ roboUsers, dispatch }}>
-      <RoboUsers />
-    </RoboContext.Provider>
+    <div className="app-main">
+      <div className="app-tabs">
+        {["Home", "About", "Contact"].map(tab => (
+          <div
+            key={tab}
+            className={selectedTab === tab ? "selected" : "not-selected"}
+            onClick={() => setSelectedTab(tab)}
+          >
+            {tab}
+          </div>
+        ))}
+        <Notifications />
+      </div>
+      <div className="app-body">Welcome to the {selectedTab} tab!</div>
+    </div>
   );
 }
 
