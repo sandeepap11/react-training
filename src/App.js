@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { LanguageContext, languages } from "./context/lang-context";
+import "./App.css";
+import Container from "./components/Container";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      language: languages.en
+    };
+
+    this.toggleTheme = () => {
+      this.setState(prevState => ({
+        language:
+          prevState.language === languages.en ? languages.de : languages.en
+      }));
+    };
+  }
+
+  render() {
+    return (
+      <div className="app-main">
+        <div>
+          <select onChange={this.toggleTheme}>
+            <option value="en">English</option>
+            <option value="de">Deutsche</option>
+          </select>
+        </div>
+        <LanguageContext.Provider value={this.state.language}>
+          <Container />
+        </LanguageContext.Provider>
+      </div>
+    );
+  }
 }
-
-export default App;
