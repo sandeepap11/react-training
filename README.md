@@ -37,6 +37,8 @@ react-hooks-useeffect: Working example for react-hooks useEffect
 react-hooks-useReducer: Working example for useReducer + useContext
 custom-hooks-example: Custom Hooks Example
 
+react-context: React Context Example
+
 > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
