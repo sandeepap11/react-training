@@ -38,6 +38,7 @@ react-hooks-useReducer: Working example for useReducer + useContext
 custom-hooks-example: Custom Hooks Example
 
 react-context: React Context Example
+react-lazy-example: React Lazy code splitting example
 
 > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
 
