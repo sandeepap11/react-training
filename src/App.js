@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, Suspense } from "react";
 import "./App.css";
-import Notifications from "./components/Notifications";
 
 function App() {
   const [selectedTab, setSelectedTab] = useState("Home");
+  const OtherComponent = React.lazy(() => import("./components/Notifications"));
 
   return (
     <div className="app-main">
@@ -17,7 +17,9 @@ function App() {
             {tab}
           </div>
         ))}
-        <Notifications />
+        <Suspense fallback={<div>Loading...</div>}>
+          <OtherComponent />
+        </Suspense>
       </div>
       <div className="app-body">Welcome to the {selectedTab} tab!</div>
     </div>

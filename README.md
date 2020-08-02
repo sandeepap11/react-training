@@ -1,4 +1,4 @@
-React Hooks: Custom Hooks Example
+React Lazy code splitting example
 
 > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
 
