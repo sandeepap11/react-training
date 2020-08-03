@@ -1,91 +1,9 @@
 .app-main {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-size: 32px;
-}
-
-.app-tabs {
-  display: flex;
-  width: 100vw;
-  justify-content: space-between;
-  background-color: black;
-  height: 80px;
-}
-
-.app-tabs > div {
   display: grid;
-  place-items: center;
-  color: white;
-  margin-left: 10px;
-  padding: 0 40px;
-  width: 100px;
-  height: 90%;
-  font-weight: 400;
-  cursor: pointer;
-}
-
-.app-tabs > div.selected {
-  border-bottom: 2px solid yellow;
-  color: yellow;
-}
-
-.app-body {
-  flex: 1;
-  display: grid;
-  place-items: center;
   text-align: center;
-  color: darkblue;
-  font-size: 92px;
-  font-weight: 100;
-}
-
-.notification-main {
-  position: relative;
+  height: 50vh;
   font-size: 44px;
-}
-
-.notification-list {
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  background-color: white;
-  height: 500px;
-  overflow-y: auto;
-}
-
-.notifications-pending {
-  position: absolute;
-  top: 15px;
-  right: 60px;
-  height: 30px;
-  width: 30px;
-  background-color: red;
-  border-radius: 50%;
-  font-size: 24px;
-  text-align: center;
-}
-
-.notification-card {
-  width: 400px;
-  font-size: 28px;
-  background-color: teal;
-  border-bottom: 2px solid;
-  height: 100px;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.notification-title {
-  width: 90%;
-}
-
-.unread-notification {
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  background-color: red;
-  align-self: center;
+  font-weight: 100;
+  color: navy;
+  padding: 200px 20px;
 }

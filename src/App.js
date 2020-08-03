@@ -1,27 +1,18 @@
-import React, { useState, Suspense } from "react";
+import React from "react";
 import "./App.css";
+import Player from "./components/Player";
 
 function App() {
-  const [selectedTab, setSelectedTab] = useState("Home");
-  const OtherComponent = React.lazy(() => import("./components/Notifications"));
-
   return (
     <div className="app-main">
-      <div className="app-tabs">
-        {["Home", "About", "Contact"].map(tab => (
-          <div
-            key={tab}
-            className={selectedTab === tab ? "selected" : "not-selected"}
-            onClick={() => setSelectedTab(tab)}
-          >
-            {tab}
-          </div>
-        ))}
-        <Suspense fallback={<div>Loading...</div>}>
-          <OtherComponent />
-        </Suspense>
-      </div>
-      <div className="app-body">Welcome to the {selectedTab} tab!</div>
+      <Player
+        {...{
+          firstName: "Stephen",
+          lastName: "Curry",
+          age: 32,
+          team: "Golden State Warriors"
+        }}
+      />
     </div>
   );
 }
