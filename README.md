@@ -40,6 +40,9 @@ custom-hooks-example: Custom Hooks Example
 react-context: React Context Example
 react-lazy-example: React Lazy code splitting example
 
+js-docs-example: Documentation with JS Docs
+prettier-config: Prettier Config Example
+
 > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
